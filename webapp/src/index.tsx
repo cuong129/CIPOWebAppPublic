@@ -11,6 +11,7 @@ import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
 import AuthLayout from 'layouts/Auth';
 import AdminLayout from 'layouts/Admin';
+import { ChakraProvider, Button } from '@chakra-ui/react';
 
 ReactDOM.render(
   <Router>
@@ -22,7 +23,12 @@ ReactDOM.render(
   </Router>,
   document.getElementById('root')
 );
-
+// ReactDOM.render(
+//   <ChakraProvider>
+//     <Button>test</Button>
+//   </ChakraProvider>,
+//   document.getElementById('root')
+// );
 // ReactDOM.render(
 //   <HashRouter>
 //     <AuthLayout />

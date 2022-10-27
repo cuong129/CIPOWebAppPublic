@@ -64,7 +64,7 @@ export default function Pages() {
   const navRef = React.useRef<HTMLDivElement>(null);
   document.documentElement.dir = 'ltr';
   return (
-    <ChakraProvider theme={theme} resetCSS={false}>
+    <ChakraProvider theme={theme}>
       <Box ref={navRef} w='100%'>
         <Portal containerRef={navRef}>
           <AuthNavbar

@@ -94,7 +94,7 @@ export default function Dashboard(props: any) {
   document.documentElement.dir = 'ltr';
   // Chakra Color Mode
   return (
-    <ChakraProvider theme={theme} resetCSS={false}>
+    <ChakraProvider theme={theme}>
       <Sidebar
         routes={routes}
         logoText={'PURITY UI DASHBOARD'}

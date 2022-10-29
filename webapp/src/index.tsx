@@ -18,7 +18,7 @@ ReactDOM.render(
     {/* <Switch> */}
     <Route path={`/admin`} component={AdminLayout} />
     <Route path={'/auth'} component={AuthLayout} />
-    <Redirect from={`/`} to='/admin/dashboard' />
+    <Redirect from={`/`} to='/admin/ls_firm' />
     {/* </Switch> */}
   </Router>,
   document.getElementById('root')

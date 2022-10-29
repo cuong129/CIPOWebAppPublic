@@ -4,8 +4,7 @@ import Dashboard from 'views/Dashboard/Dashboard';
 // import Billing from 'views/Dashboard/Billing';
 // import Profile from 'views/Dashboard/Profile';
 import { SignIn, SignUp } from 'views/Auth';
-
-//import LossGainFirm from 'views/Dashboard/LossGainFirm';
+import LossGainFirm from 'views/Dashboard/LossGainFirm';
 
 import {
   HomeIcon,
@@ -22,6 +21,13 @@ var dashRoutes = [
     name: 'Dashboard',
     icon: <HomeIcon color='inherit' />,
     component: Dashboard,
+    layout: '/admin',
+  },
+  {
+    path: '/ls_firm',
+    name: 'Loss/Gain Firm',
+    icon: <HomeIcon color='inherit' />,
+    component: LossGainFirm,
     layout: '/admin',
   },
   //   {
